@@ -1,7 +1,7 @@
 const dots = document.querySelectorAll(".dot-container button");
 const images = document.querySelectorAll(".image-container img");
-let i = 0; // current slide
-let j = 4; // total slides
+let i = 0; // present slide
+let j = 4; // total number of slides
 function next(){
     document.getElementById("content" + (i+1)).classList.remove("active");
     i = ( j + i + 1) % j;
