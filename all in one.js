@@ -8,7 +8,7 @@ let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
 
 
-// when i scroll the window searchBar bar hide automatically by window scroll
+// when the slide is scrolled down the windowSearch bar is hidden by window scroll automatically
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('active');
@@ -23,18 +23,18 @@ menu.addEventListener('click', () =>{
     navbar.classList.toggle('active');
 });
 
-// searchBar open and close toggle funciton
+// searchBar open & close toggle funciton
 searchBtn.addEventListener('click', () =>{
     searchBtn.classList.toggle('fa-times');
     searchBar.classList.toggle('active');
 });
 
-// login form open when we click on user login button
+// opening login form when we click on login user
 formBtn.addEventListener('click', () =>{
     loginForm.classList.add('active');
 });
 
-// login form close
+// closing login form
 formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
